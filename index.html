@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Analyzer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class = "bg-info bg-opacity-10 border border-info border-start-10 rounded-end">
+        <h1 class="text-center">Mood Analyzer</h1>
+    </div>
+    <br>
+    <br>
+    <div class="text-center">
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+        <button type= "button" class = "btn btn-info" id="uploadBtn">Upload Image</button>
+        <button id = "captureBtn" class = "btn btn-info" style="margin-left:15px ;">Capture Image</button>
+        <br>
+        <br>
+        <div class = "d-flex justify-content-center">
+            <video id = "video" height="250" width="500" autoplay style="display: none;"></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+
+        </div>
+
+    </div>
+    <br>
+    <div class = " d-flex justify-content-center">
+        <img id="imagePreview" src="" alt="Selected image" class = "img-fluid rounded" style=" height: 250px; width:500px; object-fit: fill; display: none; margin-top: 10px;">
+
+    </div>
+    <br>
+    <div class="text-center">
+        <button type= "button" class = "btn btn-success" id="btnsuccess">Analyze Mood</button>
+    </div>
+    <br>
+    <br>
+    
+    <h4 class="text-center">Result: </h4>
+    <div id= "result" class = "text-center fw-italic">
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
