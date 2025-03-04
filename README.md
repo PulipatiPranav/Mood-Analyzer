@@ -1,1 +1,1 @@
-"#Mood Analyzer" 
+"Mood Analyzer" 
